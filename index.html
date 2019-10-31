@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ola - Your Friendly ChatBot</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#333" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-3">
+            Ola - Your Password Generator
+          </h1>
+          <form>
+            <div class="form-group container-fluid">
+              <p>HOW MANY CHARACTERS DO YOU WANT FOR YOUR PASSWORD:</p>
+              <input
+                type="number"
+                class="form-control form-control-lg"
+                id="characterNumber"
+                placeholder=""
+                required
+                autocomplete="off"
+                autofocus
+              />
+              <div class="includes">
+                <p>Include Numbers:</p>
+                <input
+                  type="checkbox"
+                  id="number"
+                  class="number form-control"
+                />
+                <p>Include Symbols:</p>
+                <input
+                  type="checkbox"
+                  id="symbol"
+                  class="number form-control"
+                />
+              </div>
+              <button
+                id="submit"
+                class="btn btn-primary form-control-lg text-center btn-md"
+              >
+                Get Password
+              </button>
+            </div>
+            <p>Your Password :</p>
+            <div
+              class="alert alert-info form-control-lg"
+              id="password"
+            ></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center">Developed By Bankole Ahmed</p>
+    <script src="js/main.js"></script>
+    <script src="js/sw.js"></script>
+  </body>
+</html>
